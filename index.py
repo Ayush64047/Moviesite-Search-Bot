@@ -13,7 +13,9 @@ TOKEN = os.getenv("TOKEN")
 URL = "https://moviesite-search-bot-gray.vercel.app"
 bot = Bot(TOKEN)
 
-
+def welcome(update, context) -> None:
+    update.message.reply_text(f"Hello {update.message.from_user.first_name}, Welcome To Black Market Searching Bot.\n"
+                              f" 🏴Directly Search From The Bot.")
 
                             
      
