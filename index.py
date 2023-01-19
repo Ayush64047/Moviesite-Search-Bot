@@ -16,8 +16,8 @@ bot = Bot(TOKEN)
 
 def welcome(update, context) -> None:
     update.message.reply_text(f"Hello {update.message.from_user.first_name}, Welcome To Black Market Search Engine.\n"
-                              f"🔥I Can Directly Search Results From GOOGLE ✅")
-    update.message.reply_text("💥I Am Gonna Provide You Dark Links💥")
+                              f"🔥I Can Directly Search Results From GOOGLE✅")
+    update.message.reply_text("💥I Am Gonna Provide You Dark Links! Just Send Me A Movies-Series Name💥")
 
 
 def find_movie(update, context):
