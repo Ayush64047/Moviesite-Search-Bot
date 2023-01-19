@@ -14,8 +14,8 @@ URL = "https://moviesite-search-bot-gray.vercel.app"
 bot = Bot(TOKEN)
 
 def welcome(update, context) -> None:
-    update.message.reply_text(f"Hello {update.message.from_user.first_name}, Welcome To Black Market Searching Bot.\n"
-                              f" 🏴Directly Search From The Bot.")
+    update.message.reply_text(f"Hello {update.message.from_user.first_name},I Can Search Any Movie From Google Website's & Series in Telegraph Format\n"
+                              f" 🏴Drop Any Movie-Series Name's💥")
 
                             
      
@@ -33,7 +33,7 @@ def find_movie(update, context):
         reply_markup = InlineKeyboardMarkup(keyboards)
         search_results.edit_text('Searched via Black Market Fed...Tap Below 👇 To Get Links 🔥 🔗', reply_markup=reply_markup)
     else:
-        search_results.edit_text('Sorry No Results Are Found Please Visit @blackestharbour & Search There!')
+        search_results.edit_text('Sorry No Results Are Found Please Visit @blackest_harbour & Search There!')
 
 
 def movie_result(update, context) -> None:
