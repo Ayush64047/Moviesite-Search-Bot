@@ -15,7 +15,9 @@ bot = Bot(TOKEN)
 
 def welcome(update, context) -> None:
     update.message.reply_text(f"Hello {update.message.from_user.first_name},I Can Search Any Movie From Google Website's But Cannot Index Series🥳 \n"
-                              f" 🏴Drop Any Movie Name's💥")
+                              f" 🏴Drop Any Movie Name's Previous Version Had Moves To 👉 @Mdisk_Link_Downloader_Bot 💥")
+
+
 
                             
      
