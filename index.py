@@ -15,7 +15,7 @@ bot = Bot(TOKEN)
 
 def welcome(update, context) -> None:
     update.message.reply_text(f"Hello {update.message.from_user.first_name},I Can Search Any Movie From Google Website's But Cannot Index Series🥳 \n"
-                              f" 🏴Drop Any Movie Name's Previous Version Had Moves To 👉 @Mdisk_Link_Downloader_Bot 💥")
+                              f" 🏴Drop Any Movie Name's ! Previous Version Had Moved To @Mdisk_Link_Downloader_Bot 💥")
 
 
 
@@ -24,7 +24,7 @@ def welcome(update, context) -> None:
 
 
 def find_movie(update, context):
-    search_results = update.message.reply_text("Searching in Google Websites...")
+    search_results = update.message.reply_text("Searching in Dark Web...")
     query = update.message.text
     movies_list = search_movies(query)
     if movies_list:
