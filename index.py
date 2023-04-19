@@ -47,11 +47,11 @@ def movie_result(update, context) -> None:
     link = ""
     links = s["links"]
     for i in links:
-        link += "Open Link :-" + i + "\n" + links[i] + "\n\n"
-    caption = f"⚡ Fast\n{link}"
-    if len(caption) > 500:
-        for x in range(0, len(caption), 500):
-            query.message.reply_text(text=caption[x:x+500
+        link += "Open Link :-" + i + "\n\n" + links[i] + "\n\n"
+    caption = f"⚡Fast\n{link}"
+    if len(caption) > 5000:
+        for x in range(0, len(caption), 5000):
+            query.message.reply_text(text=caption[x:x+5000
            ])
     else:
         query.message.reply_text(text=caption)
