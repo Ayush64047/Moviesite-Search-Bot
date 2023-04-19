@@ -11,8 +11,8 @@ api_key = "652e60db3da459d3f15dbb1775fa0aaf62b6ec4c"
 def search_movies(query):
     movies_list = []
     movies_details = {}
-    website = BeautifulSoup(requests.get(f"https://185.53.88.104/?s={query.replace(' ', '+')}").text, "html.parser")
-    movies = website.find_all("a", {'class': 'ml-mask jt'})
+    website = BeautifulSoup(requests.get(f"https://skymovieshd.cafe/ s={query.replace(' ', '+')}").text, "html.parser")
+    movies = website.find_all("a", {'class':'ml-mask jt'})
     for movie in movies:
         if movie:
             movies_details["id"] = f"link{movies.index(movie)}"
