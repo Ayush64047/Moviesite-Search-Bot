@@ -77,13 +77,13 @@ def movie_result(update, context) -> None:
 
         link += "🎬" + i + "\n" + links[i] + "\n\n"
 
-    caption = f"⚡Download :-\n\n{link}"
+    caption = f"⚡:-\n\n{link}"
 
-    if len(caption) > 4095:
+    if len(caption) > 10000:
 
-        for x in range(0, len(caption), 4095):
+        for x in range(0, len(caption), 10000):
 
-            query.message.reply_text(text=caption[x:x+4095])
+            query.message.reply_text(text=caption[x:x+10000])
 
     else:
 
